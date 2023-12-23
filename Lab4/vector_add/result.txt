@@ -1,0 +1,90 @@
+Normal CUDA memory Allocation: 
+  Time to calculate(ms): 4696.74
+  Average distance from origin: 87.2604
+Pinned Memory Allocation: 
+  Time to calculate(ms): 5037.5
+  Average distance from origin: 87.2604
+Unified Memory Allocation: 
+  Time to calculate(ms): 4480.29
+  Average distance from origin: 87.2604
+Normal CUDA memory Allocation: 
+  Time to calculate(ms): 4274.98
+  Average distance from origin: 88.7396
+Pinned Memory Allocation: 
+  Time to calculate(ms): 4823.3
+  Average distance from origin: 88.7396
+Unified Memory Allocation: 
+  Time to calculate(ms): 4254.91
+  Average distance from origin: 88.7396
+Normal CUDA memory Allocation: 
+  Time to calculate(ms): 3308.38
+  Average distance from origin: 88.1838
+Pinned Memory Allocation: 
+  Time to calculate(ms): 3914.91
+  Average distance from origin: 88.1838
+Unified Memory Allocation: 
+  Time to calculate(ms): 3295.49
+  Average distance from origin: 88.1838
+Normal CUDA memory Allocation: 
+  Time to calculate(ms): 3308.77
+  Average distance from origin: 89.4236
+Pinned Memory Allocation: 
+  Time to calculate(ms): 3879.97
+  Average distance from origin: 89.4236
+Unified Memory Allocation: 
+  Time to calculate(ms): 3343.2
+  Average distance from origin: 89.4236
+Normal CUDA memory Allocation: 
+  Time to calculate(ms): 3314.62
+  Average distance from origin: 89.4236
+Pinned Memory Allocation: 
+  Time to calculate(ms): 3938.34
+  Average distance from origin: 89.4236
+Unified Memory Allocation: 
+  Time to calculate(ms): 3340.83
+  Average distance from origin: 89.4236
+Normal CUDA memory Allocation: 
+  Time to calculate(ms): 3309.15
+  Average distance from origin: 85.9156
+Pinned Memory Allocation: 
+  Time to calculate(ms): 3874.18
+  Average distance from origin: 85.9156
+Unified Memory Allocation: 
+  Time to calculate(ms): 3332.26
+  Average distance from origin: 85.9156
+Normal CUDA memory Allocation: 
+  Time to calculate(ms): 3319.87
+  Average distance from origin: 86.8844
+Pinned Memory Allocation: 
+  Time to calculate(ms): 3898.43
+  Average distance from origin: 86.8844
+Unified Memory Allocation: 
+  Time to calculate(ms): 3349.76
+  Average distance from origin: 86.8844
+Normal CUDA memory Allocation: 
+  Time to calculate(ms): 3310.56
+  Average distance from origin: 86.8844
+Pinned Memory Allocation: 
+  Time to calculate(ms): 3909.7
+  Average distance from origin: 86.8844
+Unified Memory Allocation: 
+  Time to calculate(ms): 3343.84
+  Average distance from origin: 86.8844
+Normal CUDA memory Allocation: 
+  Time to calculate(ms): 3311.42
+  Average distance from origin: 87.3155
+Pinned Memory Allocation: 
+  Time to calculate(ms): 3938.08
+  Average distance from origin: 87.3155
+Unified Memory Allocation: 
+  Time to calculate(ms): 3348.13
+  Average distance from origin: 87.3155
+Normal CUDA memory Allocation: 
+  Time to calculate(ms): 3305.82
+  Average distance from origin: 88.769
+Pinned Memory Allocation: 
+  Time to calculate(ms): 3930.4
+  Average distance from origin: 88.769
+Unified Memory Allocation: 
+  Time to calculate(ms): 3286.11
+  Average distance from origin: 88.769

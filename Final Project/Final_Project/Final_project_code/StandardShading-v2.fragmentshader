@@ -1,0 +1,56 @@
+#version 330 core
+
+// Interpolated values from the vertex shaders
+in vec2 UV;
+in vec3 Position_worldspace;
+in vec3 Normal_cameraspace;
+in vec3 EyeDirection_cameraspace;
+in vec3 LightDirection_cameraspace;
+
+// Ouput data
+out vec3 color;
+
+// Values that stay constant for the whole mesh.
+uniform sampler2D myTextureSampler;
+uniform mat4 MV;
+
+// Light sources
+uniform vec3 fixedLightPosition; // 固定光源位置
+uniform float fixedLightIntensity; // 固定光源强度
+uniform vec3 internalLightPosition; // 内部光源位置
+uniform float internalLightIntensity; // 内部光源强度
+
+// Material properties (these can be passed as uniforms if needed)
+vec3 MaterialAmbientColor = vec3(0.1, 0.1, 0.1);
+vec3 MaterialSpecularColor = vec3(0.3, 0.3, 0.3);
+
+// Helper function to calculate light effect
+vec3 calculateLightEffect(vec3 lightPos, float lightIntensity, vec3 lightColor, vec3 materialDiffuseColor, vec3 MaterialSpecularColor) {
+    float distance = length(lightPos - Position_worldspace);
+    vec3 l = normalize(lightPos - Position_worldspace);
+    vec3 n = normalize(Normal_cameraspace);
+    float cosTheta = clamp(dot(n, l), 0, 1);
+
+    vec3 E = normalize(EyeDirection_cameraspace);
+    vec3 R = reflect(-l, n);
+    float cosAlpha = clamp(dot(E, R), 0, 1);
+
+    vec3 diffuse = materialDiffuseColor * lightColor * lightIntensity * cosTheta / (distance * distance);
+    vec3 specular = MaterialSpecularColor * lightColor * lightIntensity * pow(cosAlpha, 5) / (distance * distance);
+
+    return diffuse + specular;
+}
+
+void main() {
+    vec3 LightColor = vec3(1, 1, 1);
+    vec3 MaterialDiffuseColor = texture(myTextureSampler, UV).rgb;
+
+    // Calculate the effect of the fixed light
+    vec3 fixedLightEffect = calculateLightEffect(fixedLightPosition, fixedLightIntensity, LightColor, MaterialDiffuseColor, MaterialSpecularColor);
+
+    // Calculate the effect of the internal light
+    vec3 internalLightEffect = calculateLightEffect(internalLightPosition, internalLightIntensity, LightColor, MaterialDiffuseColor, MaterialSpecularColor);
+
+    // Combine the lighting effects
+    color = MaterialAmbientColor + fixedLightEffect + internalLightEffect;
+}
