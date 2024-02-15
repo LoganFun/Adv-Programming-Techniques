@@ -1,7 +1,4 @@
 /*
-Author: Zilong Fan
-Class: ECE6122
-Last Date Modified: 11/21/2023
 Description:
  TCP Server
 */ 
