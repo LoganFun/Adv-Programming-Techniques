@@ -1,12 +1,4 @@
-/*
-Author: Zilong Fan(GTID:903919944);
-Class:ECE6122A;
-Last Data Modified: 0904-2023
 
-Description: Output the all the numbers below the entered number that are multiples
-of 3 or 5 and then outputs the sum of all the multiples.
-
-*/
 
 #include<iostream>
 
