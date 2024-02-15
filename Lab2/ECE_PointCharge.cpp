@@ -1,7 +1,5 @@
 // -----------------------------------------------------------------------//
-// Author : Zilong Fan
-// Class  : ECE 6122 A
-// Date   : 9/25/2023
+
 // Version: 1
 // Description :
 	//Implement all the functions need in point charge class 
