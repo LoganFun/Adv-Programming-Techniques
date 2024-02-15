@@ -1,7 +1,4 @@
 /*
-Author: Zilong Fan
-Class: ECE6122 
-Last Date Modified: 28/11/2023
 Description:
 LAB 6 mpi ESTIMATE
 */
