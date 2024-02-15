@@ -1,11 +1,3 @@
-/*
-*Author: Zilong Fan(GTID:903919944);
-*Class:ECE6122A;
-*Last Data Modified:0904-2023
-*
-*Description: Output the text to terminal screen
-*
-*/
 
 #include<iostream>
 
