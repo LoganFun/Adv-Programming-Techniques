@@ -1,7 +1,5 @@
 // -----------------------------------------------------------------------//
-// Author : Zilong Fan
-// Class  : ECE 6122 A
-// Date   : 10/05/2023
+
 // Version: 1
 // Description :
     // This is the Main cpp file of the project in Lab 2.
